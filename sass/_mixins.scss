@@ -1,0 +1,86 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : June 17, 2015, 3:13:37 PM
+    Author     : christine
+*/
+@mixin mimic-H2{
+  -webkit-font-smoothing: antialiased;
+  border-bottom-color: $headerColors;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  color: $headerColors;
+  display: block;
+  font-family: oswald, sans-serif;
+  font-size: 2em;
+  font-weight: 300;
+  margin: .2em 0 .8em 0;
+  padding-bottom: .1em;
+  word-wrap: break-word;
+  zoom: 1;  
+}
+
+@mixin mimic-H3{
+  -webkit-font-smoothing: antialiased;
+  color: $headerColors;
+  display: block;
+  font-family: oswald, sans-serif;
+  font-size: 1.5em;
+  font-weight: 300;
+  border:none;
+  letter-spacing: 1px;
+  margin:1em 0 .25em 0;
+  text-transform: uppercase;
+  word-wrap: break-word;
+  zoom: 1;  
+}
+
+@mixin mimic-H4{
+  -webkit-font-smoothing: antialiased;
+  color: $headerColors;
+  display: block;
+  font-family: oswald, sans-serif;
+  font-size: 1.125em;
+  margin:1em 0 0.25em 0;;
+  font-weight: 300;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  word-wrap: break-word;
+  zoom: 1;
+}
+
+@mixin mimic-button {
+  color: #fff;
+  background-color: #666;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Open Sans Condensed',sans-serif;
+  font-size: 1.06667em;
+  font-weight: bold;
+  padding: .25em .5em;
+  display: inline-block;
+  margin:0;
+  border:none;
+}
+
+@mixin alternate-link {
+  color: #666;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Open Sans Condensed',sans-serif;
+  font-weight: bold;
+  margin:0;
+  border:none;
+}
+
+@mixin subnav-mobile{
+    border-top: 1px solid $dkGrey;
+    border-bottom: 1px solid $dkGrey;
+    li{ 
+      font-size: 1.2em;
+      width: 100%;
+    }  
+}

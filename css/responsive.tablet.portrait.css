@@ -1,0 +1,108 @@
+/*
+ *   Important Information about this CSS File
+ *
+ * - Do not delete or rename this file, if you do not use it leave it blank (delete
+ *   everything) and the file will be skipped when you enable Production Mode in
+ *   the Global theme settings.
+ *
+ * - Read the _README file in this directory, it contains useful help and other information.
+ */
+/* Increase the body font size on small devices 
+/*
+html {
+  font-size: 81.3%;
+}
+*/
+
+#media-check {
+  /* used for testing media query in js */
+  font-family: 'tablet_portrait';
+}
+
+
+/* Page main content region and sidebar margins */
+div.region-sidebar-second .block {
+  width: inherit;
+}
+/* end Page main content region */
+
+
+/* Page Header Region */
+#header-wrapper {
+  margin-bottom: 2em;
+}
+/* end Page Header Region */
+
+
+/* Page Header */
+#header .iit-page-header h2 {
+  font-size: 2.125em;
+  padding: 1em 0 0.20588235294118em;
+}
+/* end Page Header */
+
+
+/* header menu */
+#header .block-menu-block ul {
+  float: left;
+  width: 100%;
+}
+
+#header .block-menu-block .menu-block-wrapper ul li {
+  float: left;
+}
+/* end header menu */
+
+
+/* Department Footer */
+#footer #iit-department-footer {
+  margin-bottom: 4px;
+  text-align: center;
+}
+
+#footer #iit-department-footer h5 {
+  font-size: 1.313em;
+  margin: 6px 0 0 0;
+}
+/* end Department Footer */
+
+
+/* Full Body Slideshow */
+.full-body-slideshow .flexslider .slideshow-item .slide-image .slide-show-more {
+    display: none;
+}
+
+.full-body-slideshow .flexslider .flex-control-nav {
+    bottom: 6px;
+    padding: 0;
+    line-height: 11px;
+}
+
+.full-body-slideshow .flexslider .flex-control-nav li {
+    margin: 0 2px;
+}
+
+.full-body-slideshow .flexslider .slideshow-item .slide-caption {
+    height: 0;
+    padding-bottom: 25%;
+    width: 100%;
+}
+
+.full-body-slideshow .slide-title {
+    margin: 10px 15px 8px;
+    font-size: 31px;
+    line-height: 1.25em;
+}
+
+.full-body-slideshow .slide-body {
+    margin: 8px 15px;
+    font-size: 15px;
+    line-height: 1.35em;
+}
+
+.full-body-slideshow .slide-body p {
+    font-size: 1em;
+    line-height: 1.35em;
+    margin-bottom: 0.6em
+}
+/* end Full Body Slideshow */

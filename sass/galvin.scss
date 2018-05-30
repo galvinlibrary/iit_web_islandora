@@ -1,0 +1,636 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 22, 2015, 3:13:37 PM
+    Author     : christine
+*/
+
+// IIT Web colors
+$ltGrey: rgb(136,136,136);
+$medGrey: rgb(102,102,102);
+$dkGrey: rgb(34,34,34);
+$crimson: rgb(109,3,3);
+$red: rgb(192,12,0);
+$yellow: rgb(255,153,0);
+$white: rgb(255,255,255);
+
+$headerFont: EconomicaBold-IIT, sans-serif;
+$headerColors: $yellow;
+$linkColor: $crimson;
+
+$sidebarNormalTitleColor: $medGrey;
+$sideBarNoticeBackground: $yellow;
+$sideBarNoticeFont: $white;
+$sideBarRegBorder: $ltGrey;
+$sidebarAskBackground: $crimson;
+$sidebarAskFont: $white;
+$sideBarEmergencyBackground: $red;
+$sideBarEmergencyFont: $white;
+$sideBarLineHeight: 1.2em;
+
+$breadcrumbLink: $medGrey;
+$breadcrumbLinkHover: $crimson;
+$breadcrumbActive: $headerColors;
+
+$subNavLinkColor: $medGrey;
+$subNavBorderColor: $ltGrey;
+$subNavActiveLinkColor: $white;
+$subNavActiveBackgroundColor: $yellow;
+$subNavHoverLinkColor: $white;
+$subNavHoverBackgroundColor: $ltGrey;
+
+$border: 1px solid $ltGrey;
+
+@import "_mixins.scss"; // some mixins use colors, so import after variables
+
+.clear {clear:both;}
+.bump-right, #block-iit-display-hours-hours p a.bump-right {margin-left: 1em;}
+.CSShoney {display:none;} // for forms
+.float-left {float:left;}
+.load-iframe {
+	/*background: url("images/loading-image.gif") no-repeat 20% 20px;*/
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 35px;
+    height: 0;
+    overflow: hidden;
+	-webkit-overflow-scrolling: touch;
+}
+@media only screen and (max-width:600px){
+	.load-iframe{
+		overflow-y: scroll;
+	}
+}
+.load-iframe iframe{
+	position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+	}
+.no-margin {margin:0;}
+.border-top{
+  border-top:1px solid $ltGrey;
+  margin-top: 1em 0 0 0;
+  padding-top: 1em 0 0 0;
+ }  
+//main page elements
+#main-content{
+  h1, h2, h3, h4, h5, h6 {
+    clear:both;
+    color: $headerColors;
+  }
+  
+  ul li{
+    margin-bottom:.8em;
+  }
+ 
+  .bump-down{margin-top:1em;}
+  
+  .page-hide{display:none;}
+  
+  .group-with-next{
+    margin:2em 0 0 0;
+  }
+  
+  .collapse-text{
+    p {margin:0;}
+    p:first-child{font-weight:600;}
+  }
+  
+  //articles (not sidebar)
+  .news{
+    img{float:left;}
+    .view-content div{
+      clear:both;// for image flaot
+      margin-bottom:2em;
+    }
+  }
+  
+  .field-name-field-video-embed, .field-name-field-pdf-viewer { //spacing for video and PDF embeds
+      margin: 1em 0;
+  }  
+  
+  .img-border{
+    border: 1px solid $medGrey;
+    padding: 1em;
+  }
+  
+  p.blockquote { // Drupal's editor includes p tags when rendering the <blockquote> element.
+      margin: 0 0 1em 0;
+      padding: 1.2em;
+      background: #eee;
+      border-left: 6px solid $yellow;
+      font-size: 1.4em;
+      font-style: italic;
+  }  
+  
+  .hide-item{
+    display:none;
+  }
+  
+  #subnav li{
+    margin-bottom:0;
+  }
+  
+  p.chat-mibew-page { // mibew online status is an image, not text
+    margin-left: -8px;
+  }
+  
+  .two-columns-even{
+    img{margin:0;}
+  }
+  
+  .pad-down{padding: 16px 0 0 0;}
+
+}
+
+//article content type
+
+#main-content .node-article {
+  ul:last-child{
+  list-style:none;
+  padding-left:0;
+    li{
+      margin: 0 2em 0 0;
+      float:left;
+    }
+  }
+}
+
+// tags in articles
+section.field.field-name-field-tags{
+  clear:both;
+  padding:30px 0 0 0;
+}
+section.nodes .article h1{
+  font-size: 1.5em;
+}
+
+#main-content, .sidebar{
+  a{
+    color:$linkColor;
+    font-weight: 600;
+  }
+  a.iit-button, input.iit-button, #edit-submit-site-search-complex-, .views-exposed-form .views-exposed-widget .form-submit{
+    @include mimic-button;
+  }
+  
+  a.iit-button:hover, input.iit-button:hover, #edit-submit-site-search-complex-:hover{
+    background:$ltGrey;
+  }
+
+  a.alt-link{
+    @include alternate-link;
+  }
+  a.alt-link-lower{
+    @include alternate-link;
+    text-transform:lowercase;
+  }  
+
+  img{
+    max-width:100%;
+  }
+  strong {
+    color:$dkGrey;
+  }
+  .form-item .form-text {
+    border: 1px solid $medGrey;
+  }
+  
+}
+
+.search .views-row{
+  margin-bottom:1.5em;
+}
+
+///////////
+//SIDEBAR ELEMENTS
+.sidebar{
+  .block {
+    border: $border;
+      .block-title {color:$sidebarNormalTitleColor;}
+  }
+   a{
+    color:$linkColor;
+  }
+  .block-title, .block-content{
+    padding:6px;
+  }
+  
+  //hours 
+  #block-iit-display-hours-hours{
+    border:none;
+    background:$sideBarNoticeBackground;
+    .block-title, p, a {
+      color:$sideBarNoticeFont;
+    }
+    .open, .closed{
+      font-family: $headerFont;
+      font-size: 1.4em;
+    }
+  }
+  
+  //help
+  #block-block-19, #block-block-21{
+    .block-title{
+      background:$sidebarAskBackground;
+      color:$sidebarAskFont;
+    }
+  }
+  
+  //news
+  .social-media-images img {
+    width:16%;
+  }
+  
+  //search
+  #edit-keys{
+    width:110px;
+    float:left;
+    padding:.25em 0;
+  }
+  
+  .views-exposed-form .views-exposed-widget .form-submit {
+    @include mimic-button;
+    float:right;
+  }
+  
+  // emergency message
+  #block-block-15{
+    border:none;
+    background: $sideBarEmergencyBackground;
+    .block-title, p, a {color: $sideBarEmergencyFont;}
+  }
+  
+  p, .item-list ul li, .item-list ul li a, a{
+   font-size: 0.938em;
+   margin:0 0 .3em 0;
+   line-height:$sideBarLineHeight;
+  }
+  
+  .item-list ul {
+    list-style: none;
+    li a {
+      margin-left: -12px;
+    }
+  }
+  
+  //Quick Links
+   p#quick-links {
+    margin: 1em 0 0 0;
+    padding: .6em 0 0 0;
+  }  
+  
+  #quick-links-search-button{
+    padding: 8px 0 0 0;
+    font-size: 12px;
+  }  
+}
+
+#breadcrumb{
+  margin: 0 0 30px 0;
+  span{font-size:86%;}
+  a{
+    color:$breadcrumbLink;
+    font-weight:normal;
+  }
+  a:hover{
+    color:$breadcrumbLinkHover;
+  }  
+  .active{
+    color: $breadcrumbActive;
+    font-weight:600;
+  }
+}
+
+#iit-gf-links a.subtle-link{color: #222;}
+
+// Sub Navigation
+
+#subnav{
+background-image: url(/sites/all/themes/iit_web_galvin/css/images/background.png);
+float: left;
+font-family: 'Open Sans', sans-serif;
+font-size: .86em;
+text-decoration: none;
+text-transform: uppercase;
+word-wrap: break-word;
+margin:1em 0 2em 0;
+padding:0;
+position: relative;
+list-style: none;
+  li{
+    float:left;
+    line-height: 1.5em;
+    margin: .2em 0;
+    a {
+      color: $subNavLinkColor;
+      padding: .2em 1em;
+      font-weight:normal;
+    }
+    a:hover{
+      text-decoration: none;
+      background-color: $subNavHoverBackgroundColor;
+      color: $subNavHoverLinkColor;  
+    }
+    a.active{
+      background-color: $subNavActiveBackgroundColor;
+      color: $subNavActiveLinkColor;
+      font-weight: bold;  
+    }
+  } 
+}
+
+#subnav.subnav-page{ // this is only for basic pages with sub-navigation. keeps the mobile nav pages from adding this style""
+  background-image:none;
+  li{
+    margin: 1em 0;
+    a{
+      border: 1px solid $subNavBorderColor;
+      margin-right: 10px;
+      background-image: url(/sites/all/themes/iit_web_galvin/css/images/background.png);
+    }
+    a:hover{
+      background-image:none;
+      border: none;
+    }
+    a.active{
+      border:none;
+      background-image:none;
+    }
+  }
+}
+
+
+  .nav-no-float {
+    @include subnav-mobile;
+  }
+  
+  @media only screen and (max-width:600px){
+    @include subnav-mobile;
+  }
+
+
+
+
+////////////////
+// PAGE-SPECIFIC ITEMS
+
+// search results page
+.search-item-result{
+  margin: 0.8em 0px;
+}
+
+// db search
+  .db-search {
+    .form-item input{
+      width:20em;
+    }
+    input#edit-submit-databases-brief{
+      @include mimic-button;
+    }
+  }
+
+#hours-page {
+//  font-size:1.5em;
+  .col1{
+    color: $medGrey;
+    font-weight:600;
+  }
+  .col2{margin:0 0 1em 0;}
+}
+
+// textbooks
+.textbooks {
+
+  input.form-submit{ // search and clear buttons
+    @include mimic-button;
+  }
+  
+  h3{
+    font-size:1.2em;
+    font-weight:400;
+    margin-top:2em;
+  }
+  
+  .views-row{
+    margin-top:10px;
+  }
+  
+  .larger {
+    font-size: 120%;
+    margin: 0 16px 0 0;
+    line-height: 100%;
+}
+  
+}
+//columns for staff page
+.div-col {
+  .view-grouping-header{
+      clear:both;
+      @include mimic-H2;
+    }
+    
+  .view-grouping-content .view-grouping .view-grouping-header {
+    @include mimic-H3;
+  }    
+  .view-grouping-content {
+      h3{
+        @include mimic-H4;
+      }
+      strong{
+        color:$medGrey;
+      }
+  }
+}
+
+@media only screen and (max-width:767px){
+  .col2{
+    margin: 0 0 2em 0;
+  }
+  
+    // for columns in VuFind searches
+  #main-content .search-form .div-col {
+    .col2{
+      input{
+        margin: 10px 0 0 10px;
+      }
+    }
+  }  
+  
+}
+
+@media only screen and (min-width:768px){
+   .two-columns{
+    .col1 {
+      width: 70%;
+    }
+  }
+  .col1{
+    float:left;
+  }
+  .col2:last-child{margin-bottom:2em;}  
+  
+ .narrow{
+   .col1{
+      width:40%;
+   }
+  }
+  
+    .two-columns-even{
+    clear:both;
+    .col1, .col2{
+      width:48%;
+      float:left;
+      margin: 0 0 20px 0;
+    }
+    .col2 {float:right;}
+  }  
+  
+  // for columns in VuFind searches
+  #main-content .search-form .div-col {
+    .col2{
+      input{
+        margin: -10px 0 0 10px;
+      }
+    }
+  }  
+
+}
+
+// E-Resource customizations
+
+.database {
+  margin: 10px 0px 20px;
+  border-bottom: $border;
+  .title {
+    margin:0 0 .2em 0;
+  }  
+}
+
+.attachment-before {
+  margin: 0 0 3em 0;
+}
+
+// this is not database-specific, but cannot apply an id or class to a grid
+.view-content{
+    table, tbody, table tr{
+    border:none;
+    background:none;
+  }
+}
+
+//have this outside media query for white space
+  .content-header-columns .view-content{
+    clear:both;
+    margin-bottom:3em;
+  }
+ 
+  .content-header-columns .view-id-databases_subject_list {
+    border: $border;
+    padding: 1em;
+    margin-bottom: 1.4em;
+    .view-header p{margin:0;}
+    .view-content{
+      margin:0;
+    }
+}
+
+.formats {
+  td:first-child{
+    width:40%;
+  }
+}
+// home page slideshow
+#main-content {
+  .flex-direction-nav a{
+    overflow:visible;
+    color:white;
+    font-weight:normal;
+    }
+  .home-slide-text h1{
+     line-height:1em;
+   }
+   
+   .flexslider{
+     margin:0;
+     a{
+       font-weight:600;
+       color:$yellow;
+     }
+     
+   }
+}
+
+@media only screen and (max-width:600px){
+  .flex-direction-nav a{
+    top:80%;
+    margin: 0 0 0 20px;
+  }
+}
+  
+@media only screen and (min-width:600px){
+  //home page slideshow
+  .home-slide-container {
+      background: $dkGrey;
+  }
+  
+  .home-slide-text {
+       width: 30%;
+       float: left;
+       color:white;
+   }
+   
+    .flex-direction-nav a{
+      top:94%;
+    }
+
+   #main-content .home-slide-container img {
+     width:65%;  
+     float: right;
+ }
+
+   #main-content .flexslider{
+     background:$dkGrey;
+   }
+  
+  
+ //create columns with two view headers (such as dbs by subject)
+  .content-header-columns .column {
+    width: 44%;
+    float: left;
+    margin-right: .6em;
+  }
+
+  .content-header-columns .view-id-databases_subject_list {
+    width: 44%;
+    float: right;
+  }
+}// end media query
+
+@media only screen and (min-width:800px){
+  #main-content {
+    padding-right: 2em;
+  } // breathing room for sidebar 
+}
+
+//header menu
+#iit-gh-menu-container a.menu-highlight {
+  font-weight: 600;
+}
+
+// M&C Request: highlight IIT home button
+nav#iit-gh-primary-nav li:last-child{
+  background:$dkGrey;
+  #iit-gh-menu-iit-home{
+//    color:$yellow;
+  }
+}
+
+#edit-submitted-attach-your-stl-file-upload-button{
+display:none !important;
+}

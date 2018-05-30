@@ -1,0 +1,105 @@
+/*
+ * Target IE 6, 7 and 8 (less than IE9)
+ */
+
+
+#media-check {
+  /* used for testing media query in js */
+  font-family: 'ie';
+}
+
+.container {
+    width: 1120px;
+}
+
+.lt-ie9 img {
+    max-width: 100%;
+}
+
+
+/* PASTE DESKTOP STYLES BELOW */
+/* -------------------------- */
+
+/* Homepage Structure */
+.page-homepage .panel-flexible.iit-homepage .panels-flexible-region-iit-homepage-left_content_region {
+    width: 49.107142857143%;
+    margin-right: 0.892857142857%;
+}
+
+.page-homepage .panel-flexible.iit-homepage .panels-flexible-region-iit-homepage-right_content_region {
+    width: 49.107142857143%;
+    margin-left: 0.892857142857%;
+}
+/* end Homepage Structure */
+
+
+/* Homepage Hero Slideshow */
+#homepage-hero-slideshow .flexslider .slideshow-item .slide-caption {
+    float: left;
+    width: 31.25%;
+    height: 0;
+    padding-bottom: 31.25%;
+}
+
+#homepage-hero-slideshow .flexslider .slideshow-item .slide-image {
+    float: left;
+    width: 68.75%;
+    position: relative;
+}
+
+#homepage-hero-slideshow .flexslider .slideshow-item .slide-image .slide-show-more {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    display: block;
+    padding: 4px 8px;
+    font-weight: 600;
+}
+
+#homepage-hero-slideshow .flexslider .flex-control-nav {
+    bottom: 6px;
+    left: 6px;
+    width: inherit;
+    padding: 0;
+    line-height: 11px;
+}
+
+#homepage-hero-slideshow .flexslider .flex-control-nav li {
+    margin-right: 4px;
+}
+
+#homepage-hero-slideshow .slide-title {
+    margin: 40px 25px 8px;
+    font-size: 32px;
+    line-height: 1.25em;
+}
+
+#homepage-hero-slideshow .slide-body {
+    margin: 8px 25px;
+    font-size: 17px;
+}
+
+#homepage-hero-slideshow .slide-body p {
+	font-size: 1em;
+	line-height: 1.25em;
+}
+/* end Homepage Hero Slideshow */
+
+
+/* Department Links Region */
+.page-homepage .panel-flexible.iit-homepage .content-row #iit-homepage-dept-links a,
+.page-homepage .panel-flexible.iit-homepage .content-row #iit-homepage-secondary-links a {
+    font-size: 23px;
+}
+/* end Department Links Region */
+
+
+/* News and Events Region */
+.page-homepage .panel-flexible.iit-homepage .content-row #iit-homepage-news-events .block-title {
+    font-size: 23px;
+}
+
+#social-icons {
+    float:none;
+}
+/* end News and Events Region */

@@ -1,0 +1,126 @@
+/*
+ *   Important Information about this CSS File
+ *
+ * - Do not delete or rename this file, if you do not use it leave it blank (delete
+ *   everything) and the file will be skipped when you enable Production Mode in
+ *   the Global theme settings.
+ *
+ * - Read the _README file in this directory, it contains useful help and other information.
+ */
+
+#media-check {
+  /* used for testing media query in js */
+  font-family: 'desktop';
+}
+
+
+/* Page main content region and sidebar margins */
+.sidebar-second #content-column .content-inner {
+  margin-right: 30.26315789%;
+}
+
+div.region-sidebar-second {
+  margin-left: -29.12280701%;
+}
+/* end Page main content region */
+
+
+/* Page Header Region */
+#header-wrapper {
+  margin-bottom: 2em;
+}
+/* end Page Header Region */
+
+
+/* Page Header */
+#header .iit-page-header h2 {
+  font-size: 2.125em;
+  padding: 1em 0 0.20588235294118em;
+}
+/* end Page Header */
+
+
+/* header menu */
+#header .block-menu-block ul {
+  float: left;
+  width: 100%;
+}
+
+#header .block-menu-block .menu-block-wrapper ul li {
+  float: left;
+}
+/* end header menu */
+
+
+/* Department Footer */
+#footer #iit-department-footer {
+  margin-bottom: 4px;
+}
+
+#footer #iit-department-footer h5 {
+  font-size: 1.313em;
+  margin: 6px 0 0 0;
+}
+
+#footer #iit-department-footer .social-icons {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 6px;
+}
+/* end Department Footer */
+
+
+/* Full Body Slideshow */
+.full-body-slideshow .flexslider .slideshow-item .slide-caption {
+    float: left;
+    width: 31.25%;
+    height: 0;
+    padding-bottom: 31.25%;
+}
+
+.full-body-slideshow .flexslider .slideshow-item .slide-image {
+    float: left;
+    width: 68.75%;
+    position: relative;
+}
+
+.full-body-slideshow .flexslider .slideshow-item .slide-image .slide-show-more {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    display: block;
+    padding: 4px 8px;
+    font-weight: 600;
+}
+
+.full-body-slideshow .flexslider .flex-control-nav {
+    bottom: 8px;
+    left: 6px;
+    width: inherit;
+    padding: 0;
+    line-height: 11px;
+}
+
+.full-body-slideshow .flexslider .flex-control-nav li {
+    margin: 0 2px;
+}
+
+.full-body-slideshow .slide-title {
+    margin: 40px 35px 12px;
+    font-size: 33px;
+    line-height: 1.15em;
+}
+
+.full-body-slideshow .slide-body {
+    margin: 8px 35px;
+    font-size: 16px;
+    line-height: 1.35em;
+}
+
+.full-body-slideshow .slide-body p {
+    font-size: 1em;
+    line-height: 1.4em;
+    margin-bottom: 0.75em;
+}
+/* end Full Body Slideshow */

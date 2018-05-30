@@ -1,0 +1,116 @@
+/* =============================================================================
+ *   IIT Launchpage - Global Styles - mobile first
+ * ========================================================================== */
+body.page-launchpage {
+    background-color: #666;
+}
+
+#launchpage-wrapper {
+    position: relative;
+}
+
+#launchpage-container {
+    background-color: #000;
+}
+
+#launchpage-content {
+    color: #fff;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 16px;
+    padding: 5%;
+}
+
+#launchpage-content h5 {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: normal;
+    font-size: 32px;
+    margin: 0 0 6px 0;
+    color: #cc0000;
+}
+
+#launchpage-content p {
+    margin: 0;
+}
+
+#launchpage-content a {
+    color: #cc0000;
+}
+
+#launchpage-hero-img {
+    width: 100%;
+    display: block;
+}
+/* end IIT Launchpage - Global Styles ==================================== */
+
+@media only screen and (min-width:1025px) {
+#launchpage-container {
+    position: absolute;
+    left: 48%;
+    right: 10%;
+    top: 13%;
+    background-color: rgba(0,0,0,0.7);
+    max-width: 500px;
+}
+
+#launchpage-content {
+    padding: 3%;
+    font-size: 17px;
+}
+
+#launchpage-content h5 {
+    font-size: 35px;
+    margin: 0 0 6px 0;
+}
+} /* end > 1025 */
+
+@media only screen and (min-width:1300px) {
+#launchpage-container {
+    position: absolute;
+    left: 48%;
+    right: 10%;
+    top: 14%;
+    max-width: 600px;
+}
+
+#launchpage-content {
+    padding: 4%;
+    font-size: 19px;
+}
+
+#launchpage-content h5 {
+    font-size: 38px;
+    margin: 0 0 8px 0;
+}
+} /* end > 1300*/
+
+@media only screen and (min-width:750px) and (max-width:1024px) {
+#launchpage-container {
+    position: absolute;
+    left: 48%;
+    right: 9%;
+    top: 9%;
+    background-color: rgba(0,0,0,0.7);
+}
+
+#launchpage-content {
+    padding: 3%;
+    font-size: 16px;
+}
+
+#launchpage-content h5 {
+    font-size: 35px;
+    margin: 0 0 6px 0;
+}
+} /* end 750 - 1024 */
+
+@media only screen and (min-width:600px) and (max-width:749px) {
+#launchpage-content {
+    padding: 3%;
+    font-size: 17px;
+}
+
+#launchpage-content h5 {
+    font-size: 35px;
+    margin: 0 0 6px 0;
+}
+} /* end 600 - 749 */

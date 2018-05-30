@@ -1,0 +1,20 @@
+@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/WebsiteDrupal\/iit_web_galvin\/sass\/galvin-quick-search\.scss}line{font-family:\000032}}
+div#searchSelect input {
+  float: left;
+  margin: 6px 4px 0 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/WebsiteDrupal\/iit_web_galvin\/sass\/galvin-quick-search\.scss}line{font-family:\000036}}
+div#searchSelect label {
+  float: left;
+  font-weight: 400;
+  margin: 0 20px 20px 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/WebsiteDrupal\/iit_web_galvin\/sass\/galvin-quick-search\.scss}line{font-family:\0000315}}
+div#searchWebsite input {
+  margin: 0 10px 0 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/WebsiteDrupal\/iit_web_galvin\/sass\/galvin-quick-search\.scss}line{font-family:\0000315}}
+div#searchResearch input {
+  margin: 0 10px 0 0;
+}

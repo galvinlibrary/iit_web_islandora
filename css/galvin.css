@@ -1,0 +1,494 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 22, 2015, 3:13:37 PM
+    Author     : christine
+*/
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : June 17, 2015, 3:13:37 PM
+    Author     : christine
+*/
+.clear {
+  clear: both; }
+
+.bump-right, #block-iit-display-hours-hours p a.bump-right {
+  margin-left: 1em; }
+
+.CSShoney {
+  display: none; }
+
+.float-left {
+  float: left; }
+
+.load-iframe {
+  /*background: url("images/loading-image.gif") no-repeat 20% 20px;*/
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 35px;
+  height: 0;
+  overflow: hidden;
+  -webkit-overflow-scrolling: touch; }
+
+@media only screen and (max-width: 600px) {
+  .load-iframe {
+    overflow-y: scroll; } }
+.load-iframe iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
+.no-margin {
+  margin: 0; }
+
+.border-top {
+  border-top: 1px solid #888888;
+  margin-top: 1em 0 0 0;
+  padding-top: 1em 0 0 0; }
+
+#main-content h1, #main-content h2, #main-content h3, #main-content h4, #main-content h5, #main-content h6 {
+  clear: both;
+  color: #ff9900; }
+#main-content ul li {
+  margin-bottom: .8em; }
+#main-content .bump-down {
+  margin-top: 1em; }
+#main-content .page-hide {
+  display: none; }
+#main-content .group-with-next {
+  margin: 2em 0 0 0; }
+#main-content .collapse-text p {
+  margin: 0; }
+#main-content .collapse-text p:first-child {
+  font-weight: 600; }
+#main-content .news img {
+  float: left; }
+#main-content .news .view-content div {
+  clear: both;
+  margin-bottom: 2em; }
+#main-content .field-name-field-video-embed, #main-content .field-name-field-pdf-viewer {
+  margin: 1em 0; }
+#main-content .img-border {
+  border: 1px solid #666666;
+  padding: 1em; }
+#main-content p.blockquote {
+  margin: 0 0 1em 0;
+  padding: 1.2em;
+  background: #eee;
+  border-left: 6px solid #ff9900;
+  font-size: 1.4em;
+  font-style: italic; }
+#main-content .hide-item {
+  display: none; }
+#main-content #subnav li {
+  margin-bottom: 0; }
+#main-content p.chat-mibew-page {
+  margin-left: -8px; }
+#main-content .two-columns-even img {
+  margin: 0; }
+#main-content .pad-down {
+  padding: 16px 0 0 0; }
+
+#main-content .node-article ul:last-child {
+  list-style: none;
+  padding-left: 0; }
+  #main-content .node-article ul:last-child li {
+    margin: 0 2em 0 0;
+    float: left; }
+
+section.field.field-name-field-tags {
+  clear: both;
+  padding: 30px 0 0 0; }
+
+section.nodes .article h1 {
+  font-size: 1.5em; }
+
+#main-content a, .sidebar a {
+  color: #6d0303;
+  font-weight: 600; }
+#main-content a.iit-button, #main-content input.iit-button, #main-content #edit-submit-site-search-complex-, #main-content .views-exposed-form .views-exposed-widget .form-submit, .sidebar a.iit-button, .sidebar input.iit-button, .sidebar #edit-submit-site-search-complex-, .sidebar .views-exposed-form .views-exposed-widget .form-submit {
+  color: #fff;
+  background-color: #666;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Open Sans Condensed',sans-serif;
+  font-size: 1.06667em;
+  font-weight: bold;
+  padding: .25em .5em;
+  display: inline-block;
+  margin: 0;
+  border: none; }
+#main-content a.iit-button:hover, #main-content input.iit-button:hover, #main-content #edit-submit-site-search-complex-:hover, .sidebar a.iit-button:hover, .sidebar input.iit-button:hover, .sidebar #edit-submit-site-search-complex-:hover {
+  background: #888888; }
+#main-content a.alt-link, .sidebar a.alt-link {
+  color: #666;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Open Sans Condensed',sans-serif;
+  font-weight: bold;
+  margin: 0;
+  border: none; }
+#main-content a.alt-link-lower, .sidebar a.alt-link-lower {
+  color: #666;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Open Sans Condensed',sans-serif;
+  font-weight: bold;
+  margin: 0;
+  border: none;
+  text-transform: lowercase; }
+#main-content img, .sidebar img {
+  max-width: 100%; }
+#main-content strong, .sidebar strong {
+  color: #222222; }
+#main-content .form-item .form-text, .sidebar .form-item .form-text {
+  border: 1px solid #666666; }
+
+.search .views-row {
+  margin-bottom: 1.5em; }
+
+.sidebar .block {
+  border: 1px solid #888888; }
+  .sidebar .block .block-title {
+    color: #666666; }
+.sidebar a {
+  color: #6d0303; }
+.sidebar .block-title, .sidebar .block-content {
+  padding: 6px; }
+.sidebar #block-iit-display-hours-hours {
+  border: none;
+  background: #ff9900; }
+  .sidebar #block-iit-display-hours-hours .block-title, .sidebar #block-iit-display-hours-hours p, .sidebar #block-iit-display-hours-hours a {
+    color: white; }
+  .sidebar #block-iit-display-hours-hours .open, .sidebar #block-iit-display-hours-hours .closed {
+    font-family: EconomicaBold-IIT, sans-serif;
+    font-size: 1.4em; }
+.sidebar #block-block-19 .block-title, .sidebar #block-block-21 .block-title {
+  background: #6d0303;
+  color: white; }
+.sidebar .social-media-images img {
+  width: 16%; }
+.sidebar #edit-keys {
+  width: 110px;
+  float: left;
+  padding: .25em 0; }
+.sidebar .views-exposed-form .views-exposed-widget .form-submit {
+  color: #fff;
+  background-color: #666;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Open Sans Condensed',sans-serif;
+  font-size: 1.06667em;
+  font-weight: bold;
+  padding: .25em .5em;
+  display: inline-block;
+  margin: 0;
+  border: none;
+  float: right; }
+.sidebar #block-block-15 {
+  border: none;
+  background: #c00c00; }
+  .sidebar #block-block-15 .block-title, .sidebar #block-block-15 p, .sidebar #block-block-15 a {
+    color: white; }
+.sidebar p, .sidebar .item-list ul li, .sidebar .item-list ul li a, .sidebar a {
+  font-size: 0.938em;
+  margin: 0 0 .3em 0;
+  line-height: 1.2em; }
+.sidebar .item-list ul {
+  list-style: none; }
+  .sidebar .item-list ul li a {
+    margin-left: -12px; }
+.sidebar p#quick-links {
+  margin: 1em 0 0 0;
+  padding: .6em 0 0 0; }
+.sidebar #quick-links-search-button {
+  padding: 8px 0 0 0;
+  font-size: 12px; }
+
+#breadcrumb {
+  margin: 0 0 30px 0; }
+  #breadcrumb span {
+    font-size: 86%; }
+  #breadcrumb a {
+    color: #666666;
+    font-weight: normal; }
+  #breadcrumb a:hover {
+    color: #6d0303; }
+  #breadcrumb .active {
+    color: #ff9900;
+    font-weight: 600; }
+
+#iit-gf-links a.subtle-link {
+  color: #222; }
+
+#subnav {
+  background-image: url(/sites/all/themes/iit_web_galvin/css/images/background.png);
+  float: left;
+  font-family: 'Open Sans', sans-serif;
+  font-size: .86em;
+  text-decoration: none;
+  text-transform: uppercase;
+  word-wrap: break-word;
+  margin: 1em 0 2em 0;
+  padding: 0;
+  position: relative;
+  list-style: none; }
+  #subnav li {
+    float: left;
+    line-height: 1.5em;
+    margin: .2em 0; }
+    #subnav li a {
+      color: #666666;
+      padding: .2em 1em;
+      font-weight: normal; }
+    #subnav li a:hover {
+      text-decoration: none;
+      background-color: #888888;
+      color: white; }
+    #subnav li a.active {
+      background-color: #ff9900;
+      color: white;
+      font-weight: bold; }
+
+#subnav.subnav-page {
+  background-image: none; }
+  #subnav.subnav-page li {
+    margin: 1em 0; }
+    #subnav.subnav-page li a {
+      border: 1px solid #888888;
+      margin-right: 10px;
+      background-image: url(/sites/all/themes/iit_web_galvin/css/images/background.png); }
+    #subnav.subnav-page li a:hover {
+      background-image: none;
+      border: none; }
+    #subnav.subnav-page li a.active {
+      border: none;
+      background-image: none; }
+
+.nav-no-float {
+  border-top: 1px solid #222222;
+  border-bottom: 1px solid #222222; }
+  .nav-no-float li {
+    font-size: 1.2em;
+    width: 100%; }
+
+@media only screen and (max-width: 600px) {
+  border-top: 1px solid #222222;
+  border-bottom: 1px solid #222222;
+  li {
+    font-size: 1.2em;
+    width: 100%; } }
+.search-item-result {
+  margin: 0.8em 0px; }
+
+.db-search .form-item input {
+  width: 20em; }
+.db-search input#edit-submit-databases-brief {
+  color: #fff;
+  background-color: #666;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Open Sans Condensed',sans-serif;
+  font-size: 1.06667em;
+  font-weight: bold;
+  padding: .25em .5em;
+  display: inline-block;
+  margin: 0;
+  border: none; }
+
+#hours-page .col1 {
+  color: #666666;
+  font-weight: 600; }
+#hours-page .col2 {
+  margin: 0 0 1em 0; }
+
+.textbooks input.form-submit {
+  color: #fff;
+  background-color: #666;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Open Sans Condensed',sans-serif;
+  font-size: 1.06667em;
+  font-weight: bold;
+  padding: .25em .5em;
+  display: inline-block;
+  margin: 0;
+  border: none; }
+.textbooks h3 {
+  font-size: 1.2em;
+  font-weight: 400;
+  margin-top: 2em; }
+.textbooks .views-row {
+  margin-top: 10px; }
+.textbooks .larger {
+  font-size: 120%;
+  margin: 0 16px 0 0;
+  line-height: 100%; }
+
+.div-col .view-grouping-header {
+  clear: both;
+  -webkit-font-smoothing: antialiased;
+  border-bottom-color: #ff9900;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  color: #ff9900;
+  display: block;
+  font-family: oswald, sans-serif;
+  font-size: 2em;
+  font-weight: 300;
+  margin: .2em 0 .8em 0;
+  padding-bottom: .1em;
+  word-wrap: break-word;
+  zoom: 1; }
+.div-col .view-grouping-content .view-grouping .view-grouping-header {
+  -webkit-font-smoothing: antialiased;
+  color: #ff9900;
+  display: block;
+  font-family: oswald, sans-serif;
+  font-size: 1.5em;
+  font-weight: 300;
+  border: none;
+  letter-spacing: 1px;
+  margin: 1em 0 .25em 0;
+  text-transform: uppercase;
+  word-wrap: break-word;
+  zoom: 1; }
+.div-col .view-grouping-content h3 {
+  -webkit-font-smoothing: antialiased;
+  color: #ff9900;
+  display: block;
+  font-family: oswald, sans-serif;
+  font-size: 1.125em;
+  margin: 1em 0 0.25em 0;
+  font-weight: 300;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  word-wrap: break-word;
+  zoom: 1; }
+.div-col .view-grouping-content strong {
+  color: #666666; }
+
+@media only screen and (max-width: 767px) {
+  .col2 {
+    margin: 0 0 2em 0; }
+
+  #main-content .search-form .div-col .col2 input {
+    margin: 10px 0 0 10px; } }
+@media only screen and (min-width: 768px) {
+  .two-columns .col1 {
+    width: 70%; }
+
+  .col1 {
+    float: left; }
+
+  .col2:last-child {
+    margin-bottom: 2em; }
+
+  .narrow .col1 {
+    width: 40%; }
+
+  .two-columns-even {
+    clear: both; }
+    .two-columns-even .col1, .two-columns-even .col2 {
+      width: 48%;
+      float: left;
+      margin: 0 0 20px 0; }
+    .two-columns-even .col2 {
+      float: right; }
+
+  #main-content .search-form .div-col .col2 input {
+    margin: -10px 0 0 10px; } }
+.database {
+  margin: 10px 0px 20px;
+  border-bottom: 1px solid #888888; }
+  .database .title {
+    margin: 0 0 .2em 0; }
+
+.attachment-before {
+  margin: 0 0 3em 0; }
+
+.view-content table, .view-content tbody, .view-content table tr {
+  border: none;
+  background: none; }
+
+.content-header-columns .view-content {
+  clear: both;
+  margin-bottom: 3em; }
+
+.content-header-columns .view-id-databases_subject_list {
+  border: 1px solid #888888;
+  padding: 1em;
+  margin-bottom: 1.4em; }
+  .content-header-columns .view-id-databases_subject_list .view-header p {
+    margin: 0; }
+  .content-header-columns .view-id-databases_subject_list .view-content {
+    margin: 0; }
+
+.formats td:first-child {
+  width: 40%; }
+
+#main-content .flex-direction-nav a {
+  overflow: visible;
+  color: white;
+  font-weight: normal; }
+#main-content .home-slide-text h1 {
+  line-height: 1em; }
+#main-content .flexslider {
+  margin: 0; }
+  #main-content .flexslider a {
+    font-weight: 600;
+    color: #ff9900; }
+
+@media only screen and (max-width: 600px) {
+  .flex-direction-nav a {
+    top: 80%;
+    margin: 0 0 0 20px; } }
+@media only screen and (min-width: 600px) {
+  .home-slide-container {
+    background: #222222; }
+
+  .home-slide-text {
+    width: 30%;
+    float: left;
+    color: white; }
+
+  .flex-direction-nav a {
+    top: 94%; }
+
+  #main-content .home-slide-container img {
+    width: 65%;
+    float: right; }
+
+  #main-content .flexslider {
+    background: #222222; }
+
+  .content-header-columns .column {
+    width: 44%;
+    float: left;
+    margin-right: .6em; }
+
+  .content-header-columns .view-id-databases_subject_list {
+    width: 44%;
+    float: right; } }
+@media only screen and (min-width: 800px) {
+  #main-content {
+    padding-right: 2em; } }
+#iit-gh-menu-container a.menu-highlight {
+  font-weight: 600; }
+
+nav#iit-gh-primary-nav li:last-child {
+  background: #222222; }
+
+#edit-submitted-attach-your-stl-file-upload-button {
+  display: none !important; }
+
+/*# sourceMappingURL=galvin.css.map */

@@ -1,0 +1,66 @@
+.searchpage #search-sidebar-links {
+background-color: #eaeaea;
+padding: 15px;
+}
+.searchpage #header-wrapper {
+margin-bottom:0px!important;
+}
+
+
+.searchpage #iit-search-branding h2 {
+  font-family: 'EconomicaBold-IIT', sans-serif;
+  font-weight: normal;
+  font-size: 2.1875em;
+  margin: 0;
+  padding: 1.2em 0 0;
+}
+
+.searchpage #iit-search-branding h2 a {
+  color: #888;
+  text-decoration: none;
+}
+
+.searchpage #iit-search-branding {
+  position: relative;
+  border-bottom: 1px solid #888;
+}
+
+
+.searchpage #search-sidebar-links ul {
+list-style-type: none;
+}
+
+.searchpage #search-sidebar-links ul li {
+  margin-bottom: 10px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.searchpage #search-sidebar-links ul li a {
+  color: #000;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: bold;
+  outline: none;
+  text-transform: uppercase;
+}
+
+.searchpage #search-sidebar-links ul li ul,
+.searchpage #search-sidebar-links ul li ul li {
+  margin: 0px;
+}
+
+.searchpage #search-sidebar-links ul li ul li a {
+  text-transform: none;
+  font-weight: normal;
+}
+
+@media only screen and (max-width: 768px) and (min-width: 600px) {
+  .searchpage .two-66-33 > .region {
+  float: none;
+  display: block;
+  width: 100%;
+  clear: both;
+  }
+}
+

@@ -1,0 +1,80 @@
+/*
+ *   Important Information about this CSS File
+ *
+ * - Do not delete or rename this file, if you do not use it leave it blank (delete
+ *   everything) and the file will be skipped when you enable Production Mode in
+ *   the Global theme settings.
+ *
+ * - Read the _README file in this directory, it contains useful help and other information.
+ */
+/* Increase the default font size on small devices */
+/*
+html {
+  font-size: 112.5%;
+}
+*/
+
+#media-check {
+  /* used for testing media query in js */
+  font-family: 'smartphone_portrait';
+}
+
+
+/* Page Header */
+#header .iit-page-header h2 {
+  padding-bottom: 0.20588235294118em;
+}
+/* end Page Header */
+
+
+/* header menu */
+#header .block-menu-block {
+  border-top: 1px solid #888;
+}
+/* end header menu */
+
+
+/* Department Footer */
+#footer #iit-department-footer {
+  text-align: center;
+  margin-bottom: 4px;
+}
+
+#footer #iit-department-footer h5 {
+  font-size: 1.25em;
+  margin: 6px 0 0 0;
+}
+/* end Department Footer */
+
+
+/* Full Body Slideshow */
+.full-body-slideshow .flexslider .slideshow-item .slide-image .slide-show-more {
+    display: none;
+}
+
+.full-body-slideshow .flexslider .flex-control-nav {
+    bottom: 3px;
+    padding: 0;
+    line-height: 11px;
+}
+
+.full-body-slideshow .flexslider .flex-control-nav li {
+    margin: 0 2px;
+}
+
+.full-body-slideshow .flexslider .slideshow-item .slide-caption {
+    height: 0;
+    padding-bottom: 25%;
+    width: 100%;
+}
+
+.full-body-slideshow .slide-title {
+    margin: 15px 15px 8px;
+    font-size: 22px;
+    line-height: 1.25em;
+}
+
+.full-body-slideshow .slide-body {
+    display: none;
+}
+/* end Full Body Slideshow */
